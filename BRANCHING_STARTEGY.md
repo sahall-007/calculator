@@ -88,9 +88,9 @@ The project follows the **Conventional Commits** format to maintain consistent, 
 
 All commit messages must follow this structure:
 
-<type>: <short description>
+`<type>: <short description>`
 
-<optional body> 
+`<optional body>`
 
 #### b. Commit Types                                                 
 
