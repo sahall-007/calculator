@@ -18,13 +18,13 @@ We will maintain one permanent branch, `main`, and create short-lived branches f
 
 There will be no separate `develop` branch.
 
-# a. Main Branch
+#### a. Main Branch
 
 - `main` is the primary branch of the project.
 - It must always contain stable, integrated code.
 - All changes must be introduced through Pull Requests.
 
-# b. Supporting Branches
+#### b. Supporting Branches
 
 Supporting branches are created from `main` and merged back into `main` after completing the required review and checks.
 
@@ -84,7 +84,7 @@ Developers must follow these steps when working on a task:
 
 The project follows the **Conventional Commits** format to maintain consistent, meaningful, and readable commit messages.
 
-# a. Commit Message Format
+#### a. Commit Message Format
 
 All commit messages must follow this structure:
 
@@ -92,7 +92,7 @@ All commit messages must follow this structure:
 
   <optional body> 
 
-# b. Commit Types                                                 
+#### b. Commit Types                                                 
 
  `feat`     -  Adding a new feature                                    
  `fix`      -  Fixing a bug                                                
@@ -101,7 +101,7 @@ All commit messages must follow this structure:
  `test`     -  Adding or updating tests                                
  `chore`    -  Maintenance and configuration changes                  
 
-# c. Commit Message Guidelines
+#### c. Commit Message Guidelines
 
 - Use lowercase for the commit type and description.
 - Keep the description short and clear.
@@ -110,7 +110,7 @@ All commit messages must follow this structure:
 - Each commit should represent a logical unit of work.
 - Avoid combining unrelated changes into a single commit.
 
-# d. Examples
+#### d. Examples
 
 - `feat: add recruiter dashboard`
 - `fix: prevent duplicate email registration`
