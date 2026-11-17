@@ -28,22 +28,12 @@ There will be no separate `develop` branch.
 
 Supporting branches are created from `main` and merged back into `main` after completing the required review and checks.
 
-- `Feature`: 
-    Implementing new functionality
-    eg:- `feature/user-registration`
-
-- `Bug fix`: 
-    Fixing existing issues
-    eg:- `fix/login-validation` 
-
-- `Documentation`:
-    Updating project documentation
-    eg:- `docs/api-documentation`
-
-- `chore`: 
-    configuratoin and maintenance task
-    eg:- `chore/eslint-setup`
-
+| Type | Prefix | Example | Description |
+| :--- | :--- | :--- | :--- |
+| **Feature** | `feature/` | `feature/user-auth-api` | New features, enhancements, or UI components. |
+| **Bugfix** | `bugfix/` | `bugfix/cart-total-calculation` | Fixing existing bugs or incorrect behavior. |
+| **Chore** | `chore/` | `chore/eslint-setup` | configuratoin and maintenance task. |
+| **Refactor**| `refactor/`| `refactor/db-connection-pool` | Code restructuring without altering external behavior. |
 
 
 Supporting branches are temporary and should be deleted after successful merging.
@@ -94,12 +84,12 @@ All commit messages must follow this structure:
 
 #### b. Commit Types                                                 
 
- `feat`     -  Adding a new feature                                    
- `fix`      -  Fixing a bug                                                
- `docs`     -  Documentation changes                                   
- `refactor` -  Restructuring code without changing its behavior         
- `test`     -  Adding or updating tests                                
- `chore`    -  Maintenance and configuration changes                  
+| Type | Purpose |
+| :--- | :--- |
+| `feat` | Adding a new feature |
+| `fix` | AFixing a bug |
+| `refactor` | Restructuring code without changing its behavior |
+| `chore` | Maintenance and configuration changes |                
 
 #### c. Commit Message Guidelines
 
