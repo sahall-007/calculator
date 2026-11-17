@@ -59,14 +59,36 @@ Branch names should be descriptive, lowercase, and use hyphens to separate words
 Developers must follow these steps when working on a task:
 
 1. Pull the latest changes from `main`.
+
+```bash
+git checkout main
+git pull origin main
+```
+
 2. Create a new branch from the updated `main` branch.
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
 3. Implement the assigned task.
 4. Commit changes using meaningful commit messages.
+
+```bash
+git add .
+git commit -m "feat: implement item filtering logic"
+```
+
 5. Push the branch to the remote GitHub repository.
+
+```bash
+git push origin feature/your-feature-name
+```
+
 6. Create a Pull Request targeting `main`.
 7. Wait for code review and automated checks.
 8. Merge the Pull Request after all requirements are satisfied.
-9. Delete the supporting branch after merging.
+9. Delete the supporting branch after successful merging.
 
 ## 5. Commit Message Convention
 
