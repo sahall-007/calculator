@@ -6,9 +6,9 @@
 
 ## 1. Purpose
 
-This document defines the Git branching strategy and collaboration guidelines that all developers must follow while working on the Hiring Platform.
+This document defines the Git branching strategy and collaboration guidelines.
 
-The goal is to maintain a clean and organized codebase, avoid conflicts between developers, and ensure that changes are reviewed and tested before being merged into the main branch.
+The goal is to maintain a clean and organized codebase, avoid conflicts between developers.
 
 ## 2. Branching Model
 
@@ -20,7 +20,6 @@ There will be no separate `develop` branch.
 
 #### a. Main Branch
 
-- `main` is the primary branch of the project.
 - It must always contain stable, integrated code.
 - All changes must be introduced through Pull Requests.
 
@@ -47,10 +46,7 @@ All branches must follow this naming format:
 Examples:
 
 - `feature/recruiter-dashboard`
-- `feature/job-posting`
 - `fix/resume-upload`
-- `docs/setup-guide`
-- `chore/docker-configuration`
 
 Branch names should be descriptive, lowercase, and use hyphens to separate words.
 
@@ -72,6 +68,7 @@ git checkout -b feature/your-feature-name
 ```
 
 3. Implement the assigned task.
+
 4. Commit changes using meaningful commit messages.
 
 ```bash
@@ -86,8 +83,11 @@ git push origin feature/your-feature-name
 ```
 
 6. Create a Pull Request targeting `main`.
+
 7. Wait for code review and automated checks.
+
 8. Merge the Pull Request after all requirements are satisfied.
+
 9. Delete the supporting branch after successful merging.
 
 ## 5. Commit Message Convention
@@ -137,8 +137,6 @@ The following guidelines must be followed:
 - PRs must have a clear title and description.
 - The description should explain what was changed and why.
 - Other team members must review and approve the PR.
-- Merge conflicts must be resolved before merging.
-- The developer who created the PR should address review feedback.
 - Take a screenshot of the PR
 
 ## 7. Main Branch Protection
@@ -150,7 +148,6 @@ The following protections should be enabled:
 - Require Pull Requests before merging.
 - Require at least one approval.
 - Require status checks to pass before merging.
-- Prevent direct pushes to `main`.
 - Require branches to be up to date before merging, if supported by the CI setup.
 
 ## 8. Branch Cleanup
@@ -158,15 +155,6 @@ The following protections should be enabled:
 After a Pull Request is successfully merged into `main`, the corresponding supporting branch should be deleted from GitHub.
 
 Developers should also delete the corresponding local branch to keep their local repositories clean.
-
-## 9. General Guidelines
-
-- Always create supporting branches from the latest `main`.
-- Keep branches focused on a single task whenever practical.
-- Avoid committing unfinished or unrelated changes.
-- Pull the latest changes regularly to reduce merge conflicts.
-- Never commit secrets, credentials, or environment files containing sensitive information.
-- Follow the same branching conventions across the team.
 
 ---
 
